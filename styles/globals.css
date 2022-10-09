@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply py-[10px] px-4 flex items-center gap-x-3 bg-gradient-to-b from-gray-100 to-gray-400 hover:from-gray-300 dark:from-stone-800 dark:to-[#3C3C3C] hover:dark:bg-gradient-to-t cursor-pointer rounded-full border-b dark:border-t border-[#3C3C3C] ;
+    }
+
+    .btn-secondary {
+        @apply rounded-lg hover:bg-gray-300 dark:hover:bg-stone-800 flex p-3 cursor-pointer
+    }
+
+    .btn-form {
+        @apply cursor-pointer rounded-lg bg-gray-200 dark:bg-stone-800 flex items-center px-5 py-[10px] gap-x-2 hover:bg-gray-300 cursor-pointer hover:dark:bg-[#3c3c3c]
+    }
+
+    .form-input {
+        @apply w-full rounded-lg p-3 bg-gradient-to-b border border-stone-300 dark:border-stone-800 from-stone-50 to-stone-300 dark:to-[#1e1e1e] dark:from-stone-800 dark:to-[#1e1e1e] outline-none focus:from-stone-100 focus:to-stone-300 dark:focus:from-[#373737] dark:focus:to-[#1e1e1e] dark:focus:border-[#373737] placeholder-stone-400 dark:placeholder-[#ffffff32]
+    }
+
+    .menu-link {
+        @apply my-8 uppercase w-full
+    }
+
+    .svg {
+        @apply fill-black dark:fill-white cursor-pointer w-5 h-5
+    }
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: Lexend Deca;
+}
+
+
+h1, h2, h3 {
+    font-family: Glysa;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.hideMenuNav {
+    display: none;
+}
+
+.showMenuNav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Glysa';
+    src: url('./fonts/Glysa-Medium.woff2') format('woff2'),
+    url('./fonts/Glysa-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('./fonts/LexendDeca-Regular.woff2') format('woff2'),
+    url('./fonts/LexendDeca-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
