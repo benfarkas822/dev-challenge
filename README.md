@@ -6,4 +6,5 @@ You can run this project on localhost after the following commands:
 
 Extras: 
 dark mode- light mode
+
 setting favourites are saved in the db
